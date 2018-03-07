@@ -1,0 +1,29 @@
+<!DOCTYPE html>	
+<html lang = "en">
+<head>
+<title>Submission </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type= "text/css" href="orderForm.css">
+</head>
+<h2><i> Your form has been submitted</i></h2>
+<br>
+<br>
+<br>
+<h2><p class="near">You entered following data: </p></h2>
+<br>
+<br>
+<br>
+<br>
+ <body>
+ <fieldset id="myiddd">
+ <script>
+	var parseUrl=location.search.substring(1).split("&");
+	for (var i=0; i<parseUrl.length; i++){
+		document.write(parseUrl[i].replace("+", " "));
+		document.write("<br>");
+	}
+ </script>
+</fieldset>
+ <footer class= "bottom"><b> OrderForm-Baltimore MD</b></footer>
+ </body>
+</html>

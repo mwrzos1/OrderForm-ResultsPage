@@ -1,0 +1,69 @@
+#myidd{
+	text-align: center;
+	color:blue;
+}
+h2{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 120%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: gray;
+    margin-right: 200px;
+}
+
+#special{
+	color: black;
+	font-size: 130%;
+}
+
+#next{
+	color: black;
+	font-size:130%;
+}
+
+#near{
+	color: black;
+	font-size:120%;
+}
+
+.completed{
+	background: orange;
+}
+p.near{
+    border-style: solid;
+    border-width: 1px;
+	width: 67%;
+	text-align: center;
+	font-size: 170%;
+	background-color: orange;
+}
+
+.bottom{
+	position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+	border-style: solid;
+    border-width: 5px;
+	font-size: 150%;
+	background-color: orange;
+}
+	
+#myiddd{
+	text-align: center;
+	color: black;
+	display: flex;
+	margin-left: 220px;
+ 
+	
+}

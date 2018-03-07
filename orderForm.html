@@ -1,0 +1,281 @@
+<!DOCTYPE html>	
+<html lang = "en">
+<head>
+ <title>Orderup</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type= "text/css" href="orderForm.css">
+</head>
+<body>
+<h1 id="myidd">Place an Order </h1>
+<form action= "results.html" method="get"> 
+ <fieldset class= "completed">
+ <h4 id= "special"> <b> Billing Address </b></h4>
+ <p>
+   <label>
+	First name:
+	<input name ="firstname" type= "text" placeholder= "firstname" required id="firstname">
+   </label>
+ </p>
+ <p>  
+  <label>
+    Last name:
+	<input name ="lastname" type= "text" placeholder=
+	 "lastname" required id="lastname">
+   </label>
+ </p>
+  <label>
+  <p>
+    Street Address:
+	<input name = "address" type= "text" placeholder="address" required id="address">
+   </label>
+  </p>
+   <label>
+   <p>
+    City:
+	<input name ="city" type= "text" placeholder= "city" required id="city">
+   </label>
+   </p>
+    State<select id="state" name="state">
+     <option value="AL">AL</option>
+     <option value="AK">AK</option>
+	 <option value="AZ">AZ</option>
+	 <option value="AR">AR</option>
+	 <option value="CA">CA</option>
+	 <option value="CO">CO</option>
+	 <option value="CT">CT</option>
+	 <option value="DE">DE</option>
+	 <option value="DC">DC</option>
+	 <option value="FL">FL</option>
+	 <option value="GA">GA</option>
+	 <option value="HI">HI</option>
+	 <option value="ID">ID</option>
+	 <option value="IL">IL</option>
+	 <option value="IN">IN</option>
+	 <option value="IA">IA</option>
+	 <option value="KS">KS</option>
+	 <option value="KY">KY</option>
+	 <option value="LA">LA</option>
+	 <option value="ME">ME</option>
+	 <option value="MD">MD</option>
+	 <option value="MA">MA</option>
+	 <option value="MI">MI</option>
+	 <option value="MN">MN</option>
+	 <option value="MS">MS</option>
+	 <option value="MO">MO</option>
+	 <option value="MT">MT</option>
+	 <option value="NE">NE</option>
+	 <option value="NV">NV</option>
+	 <option value="NH">NH</option>
+	 <option value="NJ">NJ</option>
+	 <option value="NM">NM</option>
+	 <option value="NY">NY</option>
+	 <option value="NC">NC</option>
+	 <option value="ND">ND</option>
+	 <option value="OH">OH</option>
+	 <option value="OK">OK</option>
+	 <option value="OR">OR</option>
+	 <option value="PA">PA</option>
+	 <option value="RI">RI</option>
+	 <option value="SC">SC</option>
+	 <option value="SD">SD</option>
+	 <option value="TN">TN</option>
+	 <option value="TX">TX</option>
+	 <option value="UT">UT</option>
+	 <option value="VT">VT</option>
+	 <option value="VA">VA</option>
+	 <option value="WA">WA</option>
+	 <option value="WV">WV</option>
+	 <option value="WI">WI</option>
+	 <option value="WY">WY</option>
+    </select>
+  </fieldset>
+
+ <fieldset class= "completed">
+ <h4 id= "special"> <b> Delivery Address </b></h4>
+ <p>
+      <label for="checkbox"></label>
+      <input type="checkbox" name="sameAddress" id="checkbox" onclick="fillShipping()" >same as billing address
+  </p>
+  <p>
+   <label>
+	First name:
+	<input name ="bfistname" type= "text" placeholder="firstname" required id="fname">
+   </label>
+ </p>
+ <p>  
+  <label>
+    Last name:
+	<input name ="blastname" type= "text" placeholder= "lastname" required id="lname">
+   </label>
+ </p>
+  <label>
+  <p>
+    Street Address:
+	<input name = "baddress" type= "text" placeholder="address" required id="add">
+   </label>
+  </p>
+   <label>
+   <p>
+    City:
+	<input name ="bcity" type= "text" placeholder= "city" required id="ci">
+   </label>
+   </p>
+    State<select id="stat" name="bstate">
+     <option value="AL">AL</option>
+     <option value="AK">AK</option>
+	 <option value="AZ">AZ</option>
+	 <option value="AR">AR</option>
+	 <option value="CA">CA</option>
+	 <option value="CO">CO</option>
+	 <option value="CT">CT</option>
+	 <option value="DE">DE</option>
+	 <option value="DC">DC</option>
+	 <option value="FL">FL</option>
+	 <option value="GA">GA</option>
+	 <option value="HI">HI</option>
+	 <option value="ID">ID</option>
+	 <option value="IL">IL</option>
+	 <option value="IN">IN</option>
+	 <option value="IA">IA</option>
+	 <option value="KS">KS</option>
+	 <option value="KY">KY</option>
+	 <option value="LA">LA</option>
+	 <option value="ME">ME</option>
+	 <option value="MD">MD</option>
+	 <option value="MA">MA</option>
+	 <option value="MI">MI</option>
+	 <option value="MN">MN</option>
+	 <option value="MS">MS</option>
+	 <option value="MO">MO</option>
+	 <option value="MT">MT</option>
+	 <option value="NE">NE</option>
+	 <option value="NV">NV</option>
+	 <option value="NH">NH</option>
+	 <option value="NJ">NJ</option>
+	 <option value="NM">NM</option>
+	 <option value="NY">NY</option>
+	 <option value="NC">NC</option>
+	 <option value="ND">ND</option>
+	 <option value="OH">OH</option>
+	 <option value="OK">OK</option>
+	 <option value="OR">OR</option>
+	 <option value="PA">PA</option>
+	 <option value="RI">RI</option>
+	 <option value="SC">SC</option>
+	 <option value="SD">SD</option>
+	 <option value="TN">TN</option>
+	 <option value="TX">TX</option>
+	 <option value="UT">UT</option>
+	 <option value="VT">VT</option>
+	 <option value="VA">VA</option>
+	 <option value="WA">WA</option>
+	 <option value="WV">WV</option>
+	 <option value="WI">WI</option>
+	 <option value="WY">WY</option>
+    </select>
+  </fieldset>
+
+  <fieldset class="completed">
+   <h4 id="next" > <b> Payment </b> </h4>
+ <div> 
+	<label for = "radio-choice 1">Visa</label>
+	<input type= "radio" name= "payment" id= "radio-choice 1" value= "Visa" checked="checked">
+	<label for = "radio-choice 2">Master Card</label>
+	<input type= "radio" name= "payment" id= "radio-choice 2" value= "Master Card">
+	<label for = "radio-choice 3">Discover</label>
+	<input type= "radio" name= "payment" id= "radio-choice 3" value= "Discover">
+	<label for = "radio-choice 4">American Express</label>
+	<input type= "radio" name= "payment" id= "radio-choice 4" value= "American Express">
+ </div>
+   <label>
+   <p>
+	Card#:
+	<input name ="card" type= "text" maxlength="16" placeholder= "card number" required title= "16 numbers">
+   </p>
+   </label>
+   <p>
+   <label for=expiration> Expiration </label>
+    <select name="expirationMonth">
+       <option value="01">January</option>
+       <option value="02">February </option>
+       <option value="03">March</option>
+       <option value="04">April</option>
+       <option value="05">May</option>
+       <option value="06">June</option>
+       <option value="07">July</option>
+       <option value="08">August</option>
+       <option value="09">September</option>
+       <option value="10">October</option>
+       <option value="11">November</option>
+       <option value="12">December</option>
+	</p>
+    </select>
+   <select name="expirationYear">
+      <p>
+       <option value="16"> 2016</option>
+       <option value="17"> 2017</option>
+       <option value="18"> 2018</option>
+       <option value="19"> 2019</option>
+       <option value="20"> 2020</option>
+       <option value="21"> 2021</option>
+	 </p>
+     </select>
+	<label>
+	<p>
+	CVV:
+	<input name ="cvv" type= "text" maxlength="3" placeholder= "3 digits" required>
+	</p>
+    </label>
+  </fieldset>
+  <fieldset class= "completed">
+   <h4 id="near"> <b> Create Account </b> </h4>
+   <label>
+   <p>
+	Username:
+	<input name ="username" type= "text" placeholder= "username" required>
+   </p>
+   </label>
+   <label>
+   <p>
+	Password:
+	<input name ="password" type= "password" placeholder= "password" required id="password">
+   </p>
+   </label>
+   <label>
+   <p>
+	Confirm Password:
+	<input name ="passwordVerify" type= "password" placeholder= "password" required id="confirmPassword">
+   </p>
+   </label>
+
+ <label for ="submit"> Place Order </label>
+ <input id ="submit" type="submit"  onclick=" return formValidation();">
+
+</fieldset>
+</form>
+
+
+ <script type ="text/javascript">
+	function fillShipping(){
+		document.getElementById("fname").value= document.getElementById("firstname").value;
+		document.getElementById("lname").value= document.getElementById("lastname").value;
+	    document.getElementById("add").value= document.getElementById("address").value;
+	    document.getElementById("ci").value= document.getElementById("city").value;
+	    document.getElementById("stat").value= document.getElementById("state").value;
+	}
+  </script>
+
+ <script type ="text/javascript">
+   function formValidation(){
+		
+
+		if(document.getElementById("confirmPassword").value != document.getElementById("password").value){
+         alert("Ensure password match");
+  			return false;
+  		}
+		  return true;
+	}
+ </script>
+
+</body>
+</html>
